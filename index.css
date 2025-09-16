@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 8px;
+}
+
+/* Navegación */
+header {
+    background-color: #34495e;
+    padding: 15px 0;
+    margin-bottom: 40px;
+}
+
+.menu-principal {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-principal > li {
+    position: relative;
+}
+
+.menu-principal a,
+.menu-principal > li > span {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu-principal a:hover,
+.menu-principal > li > span:hover {
+    color: #f39c12;
+}
+
+/* Submenu oculto por defecto */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #2980b9;
+    padding: 10px 0;
+    border-radius: 5px;
+    list-style: none;
+    min-width: 120px;
+    z-index: 100;
+}
+
+/* Mostrar submenu al hover */
+.menu-principal > li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 8px 20px;
+}
+
+.submenu li a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.submenu li a:hover {
+    color: #f39c12;
+}
+
+/* Secciones de contenido */
+.region {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.region p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.region ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.region ul li {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Imágenes */
+.imagen-region {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.imagen-region img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.imagen-region img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px 0;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-weight: 600;
+    border-radius: 0 0 10px 10px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Danzas de la Selva Peruana</title>
+  <link rel="stylesheet" href="selva.css" />
+  <link rel="stylesheet" href="selva.js">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Danzas Típicas de la Selva Peruana</h1>
+
+    <p class="intro">Las danzas típicas de la selva peruana son una expresión cultural muy rica que refleja la cosmovisión, la relación con la naturaleza, las creencias espirituales y las tradiciones ancestrales de los pueblos amazónicos.</p>
+
+    <ul>
+        <h2>1. La Pandilla Amazónica</h2>
+        <li>Origen: Departamento de San Martín.</li>
+        <li>Características: Danza colectiva, alegre y festiva. Se baila en carnaval.</li>
+        <li>Simbolismo: Celebración de la vida, la comunidad y la fertilidad de la tierra.</li>
+        <br>
+        <h2>2. Danza del Otorongo</h2>
+        <li>Origen: Varios pueblos indígenas.</li>
+        <li>Características: Representa al otorongo (jaguar), animal sagrado.</li>
+        <li>Simbolismo: Fuerza, poder espiritual y conexión con el bosque.</li>
+        <br> 
+        <h2>3. Anaconda</h2>
+        <li>Origen: Pueblos amazónicos como los Bora o Yagua.</li>
+        <li>Características: Representa a la anaconda como símbolo de sabiduría.</li>
+        <li>Origen: Simboliza la sabiduría ancestral, la fuerza espiritual, la fertilidad y el ciclo de la vida y la muerte.</li>
+        <br>
+        <h2>4. La Tuy Tuy</h2>
+        <li>Origen: Región amazónica del Perú, especialmente en Loreto.</li>
+        <li>Características: Danza ritual que imita el vuelo de aves pequeñas y la vida en la selva.</li>
+        <li>Simbolismo: Representa la conexión con la naturaleza y la armonía con los espíritus del bosque.</li>
+        <br>
+        <h2>5. Changanacuy</h2>
+        <li>Origen: Comunidades nativas de la Amazonía peruana.</li>
+        <li>Características: Danza ceremonial y colectiva, con movimientos marcados y pasos rítmicos.</li>
+        <li>Simbolismo: Invocación de protección espiritual y agradecimiento a la Madre Tierra.</li>
+        <br>
+        <h2>6. Yana Puma Maki</h2>
+        <li>Origen: Pueblos indígenas amazónicos.</li>
+        <li>Características: Danza que representa al “puma negro” (Yana Puma), animal de gran poder espiritual.</li>
+        <li>Simbolismo: Fuerza, sigilo y protección espiritual de la comunidad.</li>
+        <br>
+        <h2>7.Yanesha </h2>
+        <li>Origen: Pueblo Yanesha, ubicado en la región Pasco y parte de la selva central.</li>
+        <li>Características: Danzas tradicionales para rituales de caza, cosecha y fiestas comunales.</li>
+        <li>Simbolismo: Celebración de la vida, respeto a la naturaleza y tradición ancestral.</li>
+        <br>
+        <h2>8.Danza del Pijuayo</h2>
+        <li>Origen: Comunidades de la selva peruana, en especial en la región de Loreto.</li>
+        <li>Características: Danza festiva que celebra la cosecha del pijuayo (fruto amazónico).</li>
+        <li>Simbolismo: Gratitud por la abundancia de la tierra y la fertilidad.</li>
+        <br>
+        <h2>9.Danza del Ayahuasca</h2>
+        <li>Origen: Pueblos Shipibo-Conibo y otros grupos de la Amazonía peruana.</li>
+        <li>Características: Danza ritual ligada al consumo ceremonial de la planta ayahuasca.</li>
+        <li>Simbolismo: Conexión espiritual, purificación, sanación y comunicación con el mundo invisible.</li>
+        <br>
+        <h2>10.Danza de la Chonta</h2>
+        <li>Origen: Comunidades indígenas amazónicas.</li>
+        <li>Características: Danza de cortejo que involucra el uso de la palma de chonta.</li>
+        <li>Simbolismo: Celebración de la fertilidad, el amor y la unión comunitaria.</li>
+
+    </ul>
+    <div class="slideshow">
+    <img id="imagen" src="" alt="Foto actual">
+  </div>
+
+  <script>
+    // Lista de imágenes
+    const imagenes = [
+        "selva/Danza1.jpg",
+        "selva/Danza2.jpg",
+        "selva/Danza3.jpg",
+        "selva/Danza4.jpg",
+        "selva/Danza5.jpg",
+        "selva/Danza6.jpg",
+        "selva/Danza7.jpg",
+        "selva/Danza8.jpg",
+        "selva/Danza9.jpg",
+        "selva/Danza10.jpg"
+    ];
+
+    let indice = 0;
+    const img = document.getElementById("imagen");
+
+    function mostrarSiguienteFoto() {
+      // Cambiar la imagen con opacidad
+      img.style.opacity = 0;
+
+      setTimeout(() => {
+        img.src = imagenes[indice];
+        img.style.opacity = 1;
+
+        indice = (indice + 1) % imagenes.length; // volver al inicio al final
+      }, 500);
+    }
+
+    // Mostrar la primera imagen al cargar
+    mostrarSiguienteFoto();
+
+    // Cambiar imagen cada 3 segundos
+    setInterval(mostrarSiguienteFoto, 3000);
+  </script>
+
+
+
+
+
+    <footer>
+      @Fabrizio Chiroque
+    </footer>
+
+  </div>
+
+</body>
+</html>

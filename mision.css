@@ -1,0 +1,46 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f8ff; /* color azul muy suave */
+    color: #333;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 35px 50px;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3; /* azul oscuro */
+    font-size: 3.2rem;
+    margin-bottom: 35px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.mision-texto p {
+    margin-bottom: 22px;
+    font-size: 1.18rem;
+    color: #444444;
+}
+
+.imagenes-mision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.imagenes-mision img {
+    width: 48%;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.2);
+    object-fit: cover;
+    height: 270px;
+}

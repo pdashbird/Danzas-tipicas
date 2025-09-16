@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selva</title>
+    <link rel="stylesheet" href="selva.css">
+    <link rel="stylesheet" href="selva.js">
+</head>
+<body>
+
+
+
+    <h1>Danzas Tipicas de la Selva Peruana</h1>
+    <p>Las danzas típicas de la selva peruana son una expresión cultural muy rica que refleja la cosmovisión, la relación con la naturaleza, las creencias espirituales y las tradiciones ancestrales de los pueblos amazónicos.</p>
+    <ul>
+        <h2>1.Marinera</h2>
+        <li>Descripción: Considerada la danza nacional del Perú.</li>
+        <li>Características: Elegante, romántica y coqueta. Se baila en pareja con pañuelos.</li>
+        <li>Origen: Fusión de tradiciones españolas, indígenas y africanas.</li>
+        <br>
+        <h2>2.Festejo</h2>
+        <li>Descripción: Danza alegre y rítmica de origen afroperuano.</li>
+        <li>Características: Movimiento de caderas, palmas, zapateo y percusión con cajón.</li>
+        <li>Significado: Representa la libertad y la celebración de los afrodescendientes.</li>
+        <br>
+        <h2>3.Zamacueca</h2>
+        <li>Descripción: Antecesora de la marinera.</li>
+        <li>Características: Baile de pareja con pañuelos, más sobrio y antiguo.</li>
+        <li>Origen: Criollo-afroperuano.</li>
+        <br>
+        <h2>4.Alcatraz</h2>
+        <li>Descripción: Danza de coqueteo y picardía.</li>
+        <li>Características: El varón intenta encender con una vela el papel atado a la espalda de la mujer.</li>
+        <li>Origen: Afroperuano.</li>
+        <br>
+        <h2>5.Tondero</h2>
+        <li>Descripción: Danza del norte del Perú, especialmente de Piura.</li>
+        <li>Características: Inspirada en el lamento del campesino, con zapateos y pañuelos.</li>
+        <li>Origen: Mestizaje criollo, indígena y gitano.</li>
+        <br>
+        <h2>6.Son de los Diablos</h2>
+        <li>Descripción: Danza tradicional del carnaval limeño.</li>
+        <li>Características: Máscaras, trajes coloridos, mezcla de lo religioso con lo pagano.</li>
+        <li>Origen: Afroperuano con influencia de los moros españoles.</li>
+        <br>
+        <h2>7.Landó</h2>
+        <li>Descripción: Danza sensual y cadenciosa.</li>
+        <li>Características: Ritmo lento, uso de cajón y guitarra. Expresa emoción y elegancia.</li>
+        <li>Origen: Afroperuano.</li>
+        <br>
+        <h2>8.Cumanana</h2>
+        <li>Origen: Afroperuano (zona de Ica y Lima).</li>
+        <li>Características: Composición rítmica y hablada, parecida a las décimas o coplas.</li>
+        <li>Significado cultural: Refleja el ingenio popular, la crítica social y la identidad afroperuana.</li>
+        <br>
+        <h2>9.Panalivio</h2>
+        <li>Origen: Afroperuano (principalmente en Lima, Chincha e Ica).</li>
+        <li>Características: Ritmo lento y melancólico.</li>
+        <li>Importancia: Es una de las expresiones más sentidas del alma afroperuana, usada como forma de protesta y memoria cultural.</li>
+        <br>
+        <h2>10.Vals Criollo</h2>
+        <li>Origen: Criollo limeño (influenciado por el vals europeo).</li>
+        <li>Características: Compás de 3/4 (como el vals vienés).</li>
+        <li>Importancia: Es una de las expresiones más representativas de la cultura criolla limeña, presente en peñas, fiestas y celebraciones.</li>
+
+    </ul>
+    
+
+  <div class="slideshow">
+    <img id="imagen" src="" alt="Foto actual">
+  </div>
+
+  <script>
+    // Lista de imágenes
+    const imagenes = [
+        "costa/Danza1.jpg",
+        "costa/Danza2.jpg",
+        "costa/Danza3.jpg",
+        "costa/Danza4.jpg",
+        "costa/Danza5.jpg",
+        "costa/Danza6.jpg",
+        "costa/Danza7.jpg",
+        "costa/Danza8.jpg",
+        "costa/Danza9.jpg",
+        "costa/Danza10.jpg"
+    ];
+
+    let indice = 0;
+    const img = document.getElementById("imagen");
+
+    function mostrarSiguienteFoto() {
+      // Cambiar la imagen con opacidad
+      img.style.opacity = 0;
+
+      setTimeout(() => {
+        img.src = imagenes[indice];
+        img.style.opacity = 1;
+
+        indice = (indice + 1) % imagenes.length; // volver al inicio al final
+      }, 500);
+    }
+
+    // Mostrar la primera imagen al cargar
+    mostrarSiguienteFoto();
+
+    // Cambiar imagen cada 3 segundos
+    setInterval(mostrarSiguienteFoto, 3000);
+  </script>
+    <footer>
+        @Fabrizio Chiroque
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y fuente general */
+body {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Contenedor principal centrado y con máximo ancho */
+.contenedor {
+  max-width: 900px;
+  background: #fff;
+  margin: 0 auto 40px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Encabezado */
+header h1 {
+  color: #205375;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Descripción general */
+.descripcion-general {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f0f6ff;
+  border-left: 6px solid #205375;
+  border-radius: 8px;
+}
+
+.descripcion-general h2 {
+  color: #205375;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.descripcion-general p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Sección de danzas */
+.danzas article {
+  margin-bottom: 30px;
+  padding: 20px 25px;
+  border: 2px solid #a3cef1;
+  border-radius: 10px;
+  background: #f9fbff;
+  transition: box-shadow 0.3s ease;
+}
+
+.danzas article:hover {
+  box-shadow: 0 8px 20px rgba(32, 83, 117, 0.25);
+}
+
+/* Título de cada danza */
+.danzas h2 {
+  color: #205375;
+  font-size: 1.9rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-bottom: 2px solid #a3cef1;
+  padding-bottom: 6px;
+}
+
+/* Subtítulos (Descripción, Características, Origen) */
+.danzas h3 {
+  color: #437bb1;
+  font-size: 1.3rem;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Párrafos de cada sección */
+.danzas p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Contenedor del slideshow */
+.slideshow {
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  max-width: 700px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  background: #fff;
+}
+
+/* Imagen fija y responsiva */
+.slideshow img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 12px;
+}
+
+/* Footer simple y centrado */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 30px;
+  font-style: italic;
+}
